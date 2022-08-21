@@ -5,15 +5,18 @@
 }
 
 .client__list {
-  margin-top: 50px;
+  margin: 50px auto 0 auto;
   display: flex;
   justify-content: center;
   gap: 30px;
+  flex-wrap: wrap;
+  max-width: 450px;
 }
 
 .client__link {
   display: flex;
-  width: 170px;
+  width: calc((100vw / 2) - 60px);
+  max-width: 210px;
   height: 92px;
   border: 1px solid var(--basic-btn-color);
   border-radius: 4px;

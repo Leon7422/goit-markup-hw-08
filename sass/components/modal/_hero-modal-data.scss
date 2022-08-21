@@ -11,14 +11,6 @@
 
 .form__data {
   display: block;
-
-  &:nth-child(-n + 4) {
-    margin-bottom: 10px;
-  }
-
-  &:nth-child(5) {
-    margin-bottom: 20px;
-  }
 }
 
 .form__description {
@@ -75,15 +67,19 @@
 
 .form__thumb {
   position: relative;
-  display: flex;
+  margin-bottom: 10px;
+
+  &:nth-child(5) {
+    margin-bottom: 20px;
+  }
 }
 
 .form__icon {
   position: absolute;
   top: 50%;
-  left: 12px;
+  left: 15px;
+  transform: translateY(18%);
 
-  transform: translateY(-50%);
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
   width: 18px;
@@ -115,9 +111,8 @@
 }
 
 .checkbox__check {
-  position: absolute;
-  top: 0;
-  left: 0;
+  position: relative;
+  right: 8px;
   width: 16px;
   height: 15px;
   opacity: 0;
@@ -129,9 +124,8 @@
 }
 
 .checkbox__vector {
-  position: absolute;
-  top: 0;
-  left: 0;
+  position: relative;
+  left: 8px;
   width: 16px;
   height: 15px;
   transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);

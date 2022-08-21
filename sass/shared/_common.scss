@@ -1,14 +1,21 @@
 .section {
-  padding: 94px 0;
+  padding: 60px 0;
+
+  @include mq(desk) {
+    padding: 94px 0;
+  }
 }
 
 .container {
   margin-left: auto;
   margin-right: auto;
-  width: 1200px;
+  max-width: 480px;
   padding-left: 15px;
   padding-right: 15px;
-  /* outline: 2px solid tomato; */
+
+  @include mq(desk) {
+    width: 1200px;
+  }
 }
 
 .link {
@@ -35,9 +42,14 @@
 .text-logo {
   font-family: 'Raleway';
   font-weight: 700;
-  font-size: 26px;
-  line-height: 1.19;
+  font-size: 24px;
+  line-height: 1.17;
   letter-spacing: 0.03em;
+
+  @include mq(desk) {
+    font-size: 26px;
+    line-height: 1.19;
+  }
 }
 
 .text-logo--blue {

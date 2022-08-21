@@ -4,5 +4,35 @@
 
 .header__container {
   display: flex;
-  height: 80px;
+  height: 60px;
+  align-items: center;
+
+  @include mq(desk) {
+    height: 80px;
+  }
+}
+
+.header__button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: transparent;
+  width: 40px;
+  height: 40px;
+  border: none;
+  padding: 0;
+
+  &:active {
+    background-color: rgba(89, 211, 219, 0.3);
+    border-radius: 50%;
+  }
+
+  @include mq(tab) {
+    display: none;
+  }
+}
+
+.header__icon-open {
+  width: 40px;
+  height: 40px;
 }

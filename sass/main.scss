@@ -1,9 +1,11 @@
 @import './utils/vars';
+@import './utils/mixins';
 @import './shared/reset';
 @import './shared/common';
 @import './components/header/header';
 @import './components/header/nav';
 @import './components/header/header-contact';
+@import './components/modal/mobile-menu';
 @import './components/index-main/hero';
 @import './components/index-main/benefit';
 @import './components/index-main/about';

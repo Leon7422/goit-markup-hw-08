@@ -13,6 +13,10 @@
   height: 100%;
   display: flex;
   gap: 50px;
+
+  @include mq(mob-only) {
+    display: none;
+  }
 }
 
 .nav__item {

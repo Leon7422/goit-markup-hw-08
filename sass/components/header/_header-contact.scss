@@ -26,6 +26,10 @@
   display: flex;
   gap: 50px;
   align-items: center;
+
+  @include mq(mob-only) {
+    display: none;
+  }
 }
 
 .header-contact__icon-envelope {
