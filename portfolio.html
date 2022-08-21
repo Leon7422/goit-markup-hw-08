@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/portfolio.min.css" />
+    <title>Портфолио</title>
+  </head>
+  <body>
+    <header class="header">
+      <div class="header__container container">
+        <nav class="nav">
+          <a class="nav__logo link" href="./index.html">
+            <span class="text-logo text-logo--blue">Web</span>
+            <span class="text-logo text-logo--dark">Studio</span>
+          </a>
+
+          <ul class="nav__list list">
+            <li class="nav__item">
+              <a class="nav__link link" href="./index.html">Студія</a>
+            </li>
+            <li class="nav__item">
+              <a class="nav__link link nav__link--current" href="./portfolio.html">Портфоліо</a>
+            </li>
+            <li class="nav__item">
+              <a class="nav__link link" href="">Контакти</a>
+            </li>
+          </ul>
+        </nav>
+
+        <ul class="header-contact list">
+          <li class="header-contact__item">
+            <a class="header-contact__link link" href="mailto:info@devstudio.com">
+              <svg class="header-contact__icon-envelope">
+                <use href="./images/icons.svg#icon-envelope"></use>
+              </svg>
+              <span>info@devstudio.com</span>
+            </a>
+          </li>
+          <li class="header-contact__item">
+            <a class="header-contact__link link" href="tel:+380961111111">
+              <svg class="header-contact__icon-smartphone">
+                <use href="./images/icons.svg#icon-smartphone"></use>
+              </svg>
+              <span>+38 096 111 11 11</span>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </header>
+
+    <main>
+      <!-- Examples of our works -->
+      <section class="example section">
+        <div class="container">
+          <h1 class="visually-hidden">Приклади робіт</h1>
+          <ul class="example__list-btn list">
+            <li>
+              <button type="button" class="example__button example__button--accent">Усі</button>
+            </li>
+            <li><button type="button" class="example__button">Веб-сайти</button></li>
+            <li><button type="button" class="example__button">Додатки</button></li>
+            <li><button type="button" class="example__button">Дизайн</button></li>
+            <li><button type="button" class="example__button">Маркетинг</button></li>
+          </ul>
+
+          <ul class="example__list list">
+            <li class="example__item">
+              <a class="example__link link" href="" class="link">
+                <div class="example__thumb">
+                  <img
+                    src="./images/technocryak.jpg"
+                    alt="Технокряк"
+                    width="370"
+                    class="example__img"
+                  />
+                  <div class="example__overlay">
+                    <p class="example__paragraph">
+                      Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів.
+                      Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи
+                      приватну особу.
+                    </p>
+                  </div>
+                </div>
+                <div class="example__key">
+                  <h2 class="example__name">Технокряк</h2>
+                  <p class="example__app">Веб-сайт</p>
+                </div>
+              </a>
+            </li>
+            <li class="example__item">
+              <a class="example__link link" href="" class="link">
+                <div class="example__thumb">
+                  <img
+                    src="./images/new-orlean.jpg"
+                    alt="Технокряк"
+                    width="370"
+                    class="example__img"
+                  />
+                  <div class="example__overlay">
+                    <p class="example__paragraph">
+                      Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів.
+                      Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи
+                      приватну особу.
+                    </p>
+                  </div>
+                </div>
+
+                <div class="example__key">
+                  <h2 class="example__name">Постер New Orlean vs Golden Star</h2>
+                  <p class="example__app">Дизайн</p>
+                </div>
+              </a>
+            </li>
+            <li class="example__item">
+              <a class="example__link link" href="" class="link">
+                <div class="example__thumb">
+                  <img
+                    src="./images/seafood.jpg"
+                    alt="Технокряк"
+                    width="370"
+                    class="example__img"
+                  />
+                  <div class="example__overlay">
+                    <p class="example__paragraph">
+                      Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів.
+                      Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи
+                      приватну особу.
+                    </p>
+                  </div>
+                </div>
+
+                <div class="example__key">
+                  <h2 class="example__name">Ресторан Seafood</h2>
+                  <p class="example__app">Додаток</p>
+                </div>
+              </a>
+            </li>
+            <li class="example__item">
+              <a class="example__link link" href="" class="link">
+                <div class="example__thumb">
+                  <img src="./images/prime.jpg" alt="Технокряк" width="370" class="example__img" />
+                  <div class="example__overlay">
+                    <p class="example__paragraph">
+                      Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів.
+                      Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи
+                      приватну особу.
+                    </p>
+                  </div>
+                </div>
+
+                <div class="example__key">
+                  <h2 class="example__name">Проєкт Prime</h2>
+                  <p class="example__app">Маркетинг</p>
+                </div>
+              </a>
+            </li>
+            <li class="example__item">
+              <a class="example__link link" href="" class="link">
+                <div class="example__thumb">
+                  <img src="./images/boxes.jpg" alt="Технокряк" width="370" class="example__img" />
+                  <div class="example__overlay">
+                    <p class="example__paragraph">
+                      Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів.
+                      Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи
+                      приватну особу.
+                    </p>
+                  </div>
+                </div>
+
+                <div class="example__key">
+                  <h2 class="example__name">Проєкт Boxes</h2>
+                  <p class="example__app">Додаток</p>
+                </div>
+              </a>
+            </li>
+            <li class="example__item">
+              <a class="example__link link" href="" class="link">
+                <div class="example__thumb">
+                  <img
+                    src="./images/inspiration.jpg"
+                    alt="Технокряк"
+                    width="370"
+                    class="example__img"
+                  />
+                  <div class="example__overlay">
+                    <p class="example__paragraph">
+                      Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів.
+                      Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи
+                      приватну особу.
+                    </p>
+                  </div>
+                </div>
+
+                <div class="example__key">
+                  <h2 class="example__name">Inspiration has no Borders</h2>
+                  <p class="example__app">Веб-сайт</p>
+                </div>
+              </a>
+            </li>
+            <li class="example__item">
+              <a class="example__link link" href="" class="link">
+                <div class="example__thumb">
+                  <img
+                    src="./images/limited-edition.jpg"
+                    alt="Технокряк"
+                    width="370"
+                    class="example__img"
+                  />
+                  <div class="example__overlay">
+                    <p class="example__paragraph">
+                      Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів.
+                      Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи
+                      приватну особу.
+                    </p>
+                  </div>
+                </div>
+
+                <div class="example__key">
+                  <h2 class="example__name">Видання Limited Edition</h2>
+                  <p class="example__app">Дизайн</p>
+                </div>
+              </a>
+            </li>
+            <li class="example__item">
+              <a class="example__link link" href="" class="link">
+                <div class="example__thumb">
+                  <img src="./images/lab.jpg" alt="Технокряк" width="370" class="example__img" />
+                  <div class="example__overlay">
+                    <p class="example__paragraph">
+                      Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів.
+                      Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи
+                      приватну особу.
+                    </p>
+                  </div>
+                </div>
+
+                <div class="example__key">
+                  <h2 class="example__name">Проєкт LAB</h2>
+                  <p class="example__app">Маркетинг</p>
+                </div>
+              </a>
+            </li>
+            <li class="example__item">
+              <a class="example__link link" href="" class="link">
+                <div class="example__thumb">
+                  <img
+                    src="./images/growing-business.jpg"
+                    alt="Технокряк"
+                    width="370"
+                    class="example__img"
+                  />
+                  <div class="example__overlay">
+                    <p class="example__paragraph">
+                      Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів.
+                      Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи
+                      приватну особу.
+                    </p>
+                  </div>
+                </div>
+
+                <div class="example__key">
+                  <h2 class="example__name">Growing Business</h2>
+                  <p class="example__app">Додаток</p>
+                </div>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="footer__container container">
+        <div class="adress">
+          <a href="./index.html" class="adress__logo link">
+            <span class="text-logo text-logo--blue">Web</span>
+            <span class="text-logo text-logo--white">Studio</span>
+          </a>
+
+          <address>
+            <ul class="list">
+              <li class="adress__item">
+                <a class="adress__text link" href="">м. Київ, пр-т Лесі Українки, 26</a>
+              </li>
+              <li class="adress__item">
+                <a class="adress__mail link" href="mailto:info@example.com">info@example.com</a>
+              </li>
+              <li class="adress__item">
+                <a class="adress__phone link" href="tel:+380991111111">+38 099 111 11 11</a>
+              </li>
+            </ul>
+          </address>
+        </div>
+        <div class="joinus">
+          <p class="joinus__paragraph">Приєднуйтесь</p>
+          <ul class="joinus__list list">
+            <li>
+              <a class="joinus__link" href=""
+                ><svg class="joinus__icon">
+                  <use href="./images/icons.svg#icon-instagram"></use></svg
+              ></a>
+            </li>
+            <li>
+              <a class="joinus__link" href=""
+                ><svg class="joinus__icon">
+                  <use href="./images/icons.svg#icon-twitter"></use></svg
+              ></a>
+            </li>
+            <li>
+              <a class="joinus__link" href=""
+                ><svg class="joinus__icon">
+                  <use href="./images/icons.svg#icon-facebook"></use></svg
+              ></a>
+            </li>
+            <li>
+              <a class="joinus__link" href=""
+                ><svg class="joinus__icon">
+                  <use href="./images/icons.svg#icon-linkedin"></use></svg
+              ></a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="subscribe">
+          <p class="subscribe__paragraph">Підпишіться на розсилку</p>
+
+          <form class="subscribe__form">
+            <input class="subscribe__input" type="email" name="email" placeholder="E-mail" />
+            <button class="button-submit" type="submit">
+              <span>Підписатися </span>
+              <svg class="subscribe__icon">
+                <use href="./images/icons.svg#icon-icon-send"></use>
+              </svg>
+            </button>
+          </form>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

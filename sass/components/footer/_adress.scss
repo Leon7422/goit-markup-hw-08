@@ -1,0 +1,36 @@
+.adress {
+  min-width: 231px;
+}
+
+.adress__logo {
+  display: flex;
+  margin-bottom: 20px;
+}
+
+.adress__item {
+  line-height: 1.5;
+
+  &:not(:last-child) {
+    margin-bottom: 9px;
+  }
+}
+
+.adress__text {
+  color: var(--white-text-color);
+  font-style: normal;
+  line-height: 1.5;
+}
+
+.adress__mail,
+.adress__phone {
+  color: rgba(255, 255, 255, 0.6);
+  font-style: normal;
+  line-height: 1.5;
+
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover,
+  &:focus {
+    color: var(--blue-color);
+  }
+}
