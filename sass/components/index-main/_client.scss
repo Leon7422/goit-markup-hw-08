@@ -10,13 +10,11 @@
   justify-content: center;
   gap: 30px;
   flex-wrap: wrap;
-  max-width: 450px;
 }
 
 .client__link {
   display: flex;
   width: calc((100vw / 2) - 60px);
-  max-width: 210px;
   height: 92px;
   border: 1px solid var(--basic-btn-color);
   border-radius: 4px;
@@ -29,6 +27,14 @@
   &:hover,
   &:focus {
     border: 1px solid var(--blue-color);
+  }
+
+  @include mq(mob-only) {
+    max-width: 210px;
+  }
+
+  @include mq(tab) {
+    width: 226px;
   }
 }
 

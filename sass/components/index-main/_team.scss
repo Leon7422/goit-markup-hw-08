@@ -13,6 +13,11 @@
   gap: 30px;
   margin-top: 50px;
   flex-direction: column;
+
+  @include mq(tab) {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
 }
 
 .team__name {
@@ -25,8 +30,14 @@
 
 .team__img {
   display: block;
-  max-width: 450px;
-  max-height: 460px;
+
+  @include mq(tel) {
+    width: 270px;
+  }
+
+  @include mq(tab) {
+    width: 354px;
+  }
 }
 
 .team__position {

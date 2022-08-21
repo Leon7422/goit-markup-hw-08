@@ -13,6 +13,10 @@
   transition: opacity 250ms linear;
   justify-content: space-between;
   z-index: 10;
+
+  @include mq(tab) {
+    display: none;
+  }
 }
 
 .is-open {

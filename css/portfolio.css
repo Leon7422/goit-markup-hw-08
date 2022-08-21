@@ -68,6 +68,11 @@ a {
   padding-left: 15px;
   padding-right: 15px;
 }
+@media screen and (min-width: 768px) {
+  .container {
+    max-width: 768px;
+  }
+}
 @media screen and (min-width: 1200px) {
   .container {
     width: 1200px;
@@ -165,7 +170,7 @@ a {
       -ms-flex-align: center;
           align-items: center;
 }
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 768px) {
   .header__container {
     height: 80px;
   }
@@ -217,6 +222,7 @@ a {
       -ms-flex-align: center;
           align-items: center;
   margin-right: auto;
+  height: 100%;
 }
 
 .nav__list {
@@ -295,19 +301,24 @@ a {
 .header-contact__item {
   height: 100%;
 }
-
-.header-contact {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  gap: 50px;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+.header-contact__item:last-child {
+  margin-top: 10px;
 }
+
 @media screen and (max-width: 767.98px) {
   .header-contact {
     display: none;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .header-contact {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    gap: 50px;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
 }
 
@@ -360,6 +371,11 @@ a {
       -ms-flex-pack: justify;
           justify-content: space-between;
   z-index: 10;
+}
+@media screen and (min-width: 768px) {
+  .mobile-menu {
+    display: none;
+  }
 }
 
 .is-open {
@@ -662,6 +678,20 @@ a {
       -ms-flex-align: center;
           align-items: center;
 }
+@media screen and (min-width: 768px) {
+  .footer__container {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    gap: 60px 165px;
+  }
+}
 @media screen and (min-width: 1200px) {
   .footer__container {
     gap: 70px;
@@ -783,6 +813,11 @@ a {
   text-transform: uppercase;
   color: var(--white-text-color);
   margin-bottom: 20px;
+}
+@media screen and (min-width: 768px) {
+  .subscribe__paragraph {
+    text-align: center;
+  }
 }
 
 .subscribe__icon {

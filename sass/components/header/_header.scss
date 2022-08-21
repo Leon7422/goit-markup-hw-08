@@ -7,7 +7,7 @@
   height: 60px;
   align-items: center;
 
-  @include mq(desk) {
+  @include mq(tab) {
     height: 80px;
   }
 }

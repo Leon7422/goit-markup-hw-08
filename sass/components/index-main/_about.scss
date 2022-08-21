@@ -1,7 +1,5 @@
 .about {
-  @include mq(mob-only) {
-    display: none;
-  }
+  display: none;
 }
 
 .about__title {
