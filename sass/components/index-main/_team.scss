@@ -14,9 +14,25 @@
   margin-top: 50px;
   flex-direction: column;
 
+  @media screen and (max-width: 550px) {
+    width: 270px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  @media screen and (min-width: 551px) and (max-width: 767px) {
+    width: 450px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
   @include mq(tab) {
     flex-direction: row;
     flex-wrap: wrap;
+  }
+
+  @include mq(desk) {
+    flex-wrap: nowrap;
   }
 }
 
@@ -31,12 +47,20 @@
 .team__img {
   display: block;
 
-  @include mq(tel) {
+  @media screen and (max-width: 550px) {
     width: 270px;
+  }
+
+  @media screen and (min-width: 551px) and (max-width: 767px) {
+    width: 450px;
   }
 
   @include mq(tab) {
     width: 354px;
+  }
+
+  @include mq(desk) {
+    width: 270px;
   }
 }
 

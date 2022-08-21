@@ -9,7 +9,7 @@
   }
 
   @include mq(desk) {
-    flex-direction: row;
+    flex-wrap: nowrap;
   }
 }
 

@@ -53,9 +53,17 @@
   flex-wrap: wrap;
   gap: 30px;
   justify-content: center;
+
+  @include mq(tab-only) {
+    justify-content: flex-start;
+  }
 }
 
 .example__item {
+  max-width: 368px;
+  border-left: 1px solid #eeeeee;
+  border-right: 1px solid #eeeeee;
+  border-bottom: 1px solid #eeeeee;
   transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
   &:hover {
@@ -67,6 +75,7 @@
 .example__link {
   display: block;
   transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  height: 100%;
 
   &:focus {
     box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
@@ -81,6 +90,13 @@
 
 .example__img {
   display: block;
+
+  width: 100%;
+  height: auto;
+
+  @include mq(tab-only) {
+    width: 352px;
+  }
 }
 
 .example__overlay {
@@ -121,6 +137,10 @@
   line-height: 2;
   letter-spacing: 0.06em;
   color: var(--primary-text-color);
+
+  @include mq(tab-only) {
+    max-width: 304px;
+  }
 }
 
 .example__app {
@@ -132,7 +152,4 @@
 
 .example__key {
   padding: 20px 24px;
-  border-left: 1px solid #eeeeee;
-  border-right: 1px solid #eeeeee;
-  border-bottom: 1px solid #eeeeee;
 }

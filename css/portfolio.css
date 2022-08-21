@@ -75,7 +75,7 @@ a {
 }
 @media screen and (min-width: 1200px) {
   .container {
-    width: 1200px;
+    max-width: 1200px;
   }
 }
 
@@ -301,8 +301,10 @@ a {
 .header-contact__item {
   height: 100%;
 }
-.header-contact__item:last-child {
-  margin-top: 10px;
+@media screen and (min-width: 768px) and (max-width: 1199.98px) {
+  .header-contact__item:last-child {
+    margin-top: 10px;
+  }
 }
 
 @media screen and (max-width: 767.98px) {
@@ -478,6 +480,8 @@ a {
   display: flex;
   gap: 20px;
   margin-top: 64px;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
 .mobile-menu__social-link {
@@ -566,8 +570,19 @@ a {
       -ms-flex-pack: center;
           justify-content: center;
 }
+@media screen and (min-width: 768px) and (max-width: 1199.98px) {
+  .example__list {
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+  }
+}
 
 .example__item {
+  max-width: 368px;
+  border-left: 1px solid #eeeeee;
+  border-right: 1px solid #eeeeee;
+  border-bottom: 1px solid #eeeeee;
   -webkit-transition: -webkit-box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: -webkit-box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -584,6 +599,7 @@ a {
   transition: -webkit-box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  height: 100%;
 }
 .example__link:focus {
   -webkit-box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
@@ -597,6 +613,13 @@ a {
 
 .example__img {
   display: block;
+  width: 100%;
+  height: auto;
+}
+@media screen and (min-width: 768px) and (max-width: 1199.98px) {
+  .example__img {
+    width: 352px;
+  }
 }
 
 .example__overlay {
@@ -642,6 +665,11 @@ a {
   letter-spacing: 0.06em;
   color: var(--primary-text-color);
 }
+@media screen and (min-width: 768px) and (max-width: 1199.98px) {
+  .example__name {
+    max-width: 304px;
+  }
+}
 
 .example__app {
   margin-top: 4px;
@@ -652,9 +680,6 @@ a {
 
 .example__key {
   padding: 20px 24px;
-  border-left: 1px solid #eeeeee;
-  border-right: 1px solid #eeeeee;
-  border-bottom: 1px solid #eeeeee;
 }
 
 .footer {
@@ -695,6 +720,9 @@ a {
 @media screen and (min-width: 1200px) {
   .footer__container {
     gap: 70px;
+    -webkit-box-align: baseline;
+        -ms-flex-align: baseline;
+            align-items: baseline;
   }
 }
 
@@ -806,6 +834,14 @@ a {
       -ms-flex-direction: column;
           flex-direction: column;
 }
+@media screen and (min-width: 1200px) {
+  .subscribe__form {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+}
 
 .subscribe__paragraph {
   font-weight: 700;
@@ -814,7 +850,7 @@ a {
   color: var(--white-text-color);
   margin-bottom: 20px;
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 768px) and (max-width: 1199.98px) {
   .subscribe__paragraph {
     text-align: center;
   }
@@ -854,4 +890,9 @@ a {
 
 .subscribe__button {
   margin: 20px auto 0 auto;
+}
+@media screen and (min-width: 1200px) {
+  .subscribe__button {
+    margin: 0;
+  }
 }/*# sourceMappingURL=portfolio.css.map */

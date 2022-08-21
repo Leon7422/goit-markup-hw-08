@@ -21,8 +21,10 @@
 .header-contact__item {
   height: 100%;
 
-  &:last-child {
-    margin-top: 10px;
+  @include mq(tab-only) {
+    &:last-child {
+      margin-top: 10px;
+    }
   }
 }
 
