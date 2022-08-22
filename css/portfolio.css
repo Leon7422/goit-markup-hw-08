@@ -334,6 +334,12 @@ a {
 .header-contact__link:hover .header-contact__icon-envelope, .header-contact__link:focus .header-contact__icon-envelope {
   fill: var(--blue-color);
 }
+@media screen and (min-width: 768px) and (max-width: 1199.98px) {
+  .header-contact__icon-envelope {
+    width: 14px;
+    height: 10px;
+  }
+}
 
 .header-contact__icon-smartphone {
   height: 16px;
@@ -344,6 +350,12 @@ a {
 }
 .header-contact__link:hover .header-contact__icon-smartphone, .header-contact__link:focus .header-contact__icon-smartphone {
   fill: var(--blue-color);
+}
+@media screen and (min-width: 768px) and (max-width: 1199.98px) {
+  .header-contact__icon-smartphone {
+    width: 10px;
+    height: 16px;
+  }
 }
 
 .header-contact__link {

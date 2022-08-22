@@ -335,6 +335,12 @@ a {
 .header-contact__link:hover .header-contact__icon-envelope, .header-contact__link:focus .header-contact__icon-envelope {
   fill: var(--blue-color);
 }
+@media screen and (min-width: 768px) and (max-width: 1199.98px) {
+  .header-contact__icon-envelope {
+    width: 14px;
+    height: 10px;
+  }
+}
 
 .header-contact__icon-smartphone {
   height: 16px;
@@ -345,6 +351,12 @@ a {
 }
 .header-contact__link:hover .header-contact__icon-smartphone, .header-contact__link:focus .header-contact__icon-smartphone {
   fill: var(--blue-color);
+}
+@media screen and (min-width: 768px) and (max-width: 1199.98px) {
+  .header-contact__icon-smartphone {
+    width: 10px;
+    height: 16px;
+  }
 }
 
 .header-contact__link {
@@ -512,17 +524,43 @@ a {
   max-width: 100vw;
   margin: 0 auto;
   padding: 118px 0;
-  background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/hero-overlay.jpg);
-  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero-overlay.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+  background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/herobg@1x-mob.jpg);
+  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/herobg@1x-mob.jpg);
+}
+@media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+  .hero {
+    background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/herobg@2x-mob.jpg);
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/herobg@2x-mob.jpg);
+  }
+}
+@media screen and (min-width: 768px) {
+  .hero {
+    background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/herobg@1x-tab.jpg);
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/herobg@1x-tab.jpg);
+  }
+}
+@media screen and (min-width: 768px) and (min-device-pixel-ratio: 2), screen and (min-width: 768px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 768px) and (min-resolution: 192dpi), screen and (min-width: 768px) and (min-resolution: 2dppx) {
+  .hero {
+    background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/herobg@2x-tab.jpg);
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/herobg@2x-tab.jpg);
+  }
 }
 @media screen and (min-width: 1200px) {
   .hero {
+    background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/herobg@1x-desk.jpg);
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/herobg@1x-desk.jpg);
     height: 600px;
     max-width: 1600px;
     padding: 200px 0;
+  }
+}
+@media screen and (min-width: 1200px) and (min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (min-resolution: 192dpi), screen and (min-width: 1200px) and (min-resolution: 2dppx) {
+  .hero {
+    background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/herobg@2x-desk.jpg);
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/herobg@2x-desk.jpg);
   }
 }
 
@@ -723,16 +761,9 @@ a {
       -ms-flex-direction: column;
           flex-direction: column;
 }
-@media screen and (max-width: 550px) {
+@media screen and (max-width: 767.98px) {
   .team__list {
     width: 270px;
-    margin-left: auto;
-    margin-right: auto;
-  }
-}
-@media screen and (min-width: 551px) and (max-width: 767px) {
-  .team__list {
-    width: 450px;
     margin-left: auto;
     margin-right: auto;
   }
@@ -764,16 +795,7 @@ a {
 
 .team__img {
   display: block;
-}
-@media screen and (max-width: 550px) {
-  .team__img {
-    width: 270px;
-  }
-}
-@media screen and (min-width: 551px) and (max-width: 767px) {
-  .team__img {
-    width: 450px;
-  }
+  width: 270px;
 }
 @media screen and (min-width: 768px) {
   .team__img {

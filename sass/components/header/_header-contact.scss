@@ -50,6 +50,11 @@
   .header-contact__link:focus & {
     fill: var(--blue-color);
   }
+
+  @include mq(tab-only) {
+    width: 14px;
+    height: 10px;
+  }
 }
 
 .header-contact__icon-smartphone {
@@ -61,6 +66,11 @@
   .header-contact__link:hover &,
   .header-contact__link:focus & {
     fill: var(--blue-color);
+  }
+
+  @include mq(tab-only) {
+    width: 10px;
+    height: 16px;
   }
 }
 

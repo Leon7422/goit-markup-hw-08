@@ -14,14 +14,8 @@
   margin-top: 50px;
   flex-direction: column;
 
-  @media screen and (max-width: 550px) {
+  @include mq(mob-only) {
     width: 270px;
-    margin-left: auto;
-    margin-right: auto;
-  }
-
-  @media screen and (min-width: 551px) and (max-width: 767px) {
-    width: 450px;
     margin-left: auto;
     margin-right: auto;
   }
@@ -46,14 +40,7 @@
 
 .team__img {
   display: block;
-
-  @media screen and (max-width: 550px) {
-    width: 270px;
-  }
-
-  @media screen and (min-width: 551px) and (max-width: 767px) {
-    width: 450px;
-  }
+  width: 270px;
 
   @include mq(tab) {
     width: 354px;
